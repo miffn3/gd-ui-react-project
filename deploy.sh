@@ -7,6 +7,8 @@ if [ $APP_SIDE = $FRONTEND_TARGET ]
     cd client
     npm install
     npm run build
+    npm install -g serve
+    serve -s build
 else
     cd server
     npm install
